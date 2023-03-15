@@ -4,17 +4,23 @@ import java.util.Scanner;
 public class StatsCalculatorTester
 {
 
-    public static void main(String[] args) {
-        double[] testValues = {10.0, 20.0, 5.0, 15.0, 25.0, 30.0, 8.0};
+    public static void main(String[] args)
+    {
 
-        //sort is a static method that belongs to the Array class, so to call it
-        //we use the form ClassName.methodName(params). We are not creating an object
-        Arrays.sort(testValues);
+        Scanner input = new Scanner(System.in);
+        double[] userDoubles = new double[7];
+        System.out.println("Enter 7 Values");
 
+        for(int i = 0; i < 7; i++)
+        {
+            userDoubles[i] = input.nextDouble();
+        }
+
+        Arrays.sort(userDoubles);
 
         //to print arrays we can use an enhanced for loop
-        System.out.println("Enhanced for loop printing: ");
-        for (double value : testValues) {
+        System.out.println("Your sorted data is: ");
+        for (double value : userDoubles) {
             System.out.print(value + ", ");
         }
 
