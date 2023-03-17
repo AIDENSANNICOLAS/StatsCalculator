@@ -3,6 +3,9 @@ import java.util.Arrays;
 
 public class StatsCalculator {
     private double[] sortedTestValues;
+    private double[] userDoubles = new double[7];
+    static StatsCalculatorTester newStatsCalculater = new StatsCalculatorTester();
+    static double[] importedUserDoubles = newStatsCalculater.userDoubles;
 
     /**
      * Find the maximum value in an array
@@ -24,19 +27,30 @@ public class StatsCalculator {
         return max;
     }
 
-    public static void StatsCalculator() {
-        double[] twentyArray = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,};
+    /**
+     * @StatsCalculator This is a default constructor that makes an array of size 20 full of 0s
+     */
+    
+    public static void StatsCalculator()
+    {
+        double[] doubleArr = new double[20];
     }
 
-    public static void StatsCalculator(double[] values) {
+    public static void StatsCalculator(double[] values)
+    {
         double[] twentyArray = values;
     }
 
- /*
-    public void sortData(StatsCalculatorTester.testValues())
+    public static void
+
+
+    public static void sortData(double[] sortedTestValues)
     {
-        Arrays.sort(testValues);
+        sortedTestValues = importedUserDoubles;
+        Arrays.sort(sortedTestValues);
     }
+
+
 
 
 
@@ -45,7 +59,6 @@ public class StatsCalculator {
     {
 
     }
-*/
 
 }
 
